@@ -118,7 +118,7 @@ class PosReportGenerator(models.Model):
         filter_dict.update(default_filters)
         return filter_dict
 
-    @api.model_create_single
+    @api.model_create_multi
     def create(self, vals):
         """
         Create a new instance of the PosReportGenerator model with the provided
